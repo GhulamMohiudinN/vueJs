@@ -5,9 +5,8 @@ import Hide from "@/assets/vueJs/hide.png";
 let a: boolean = false;
 
 function pass() {
-  const passwordInput = document.getElementById("password");
-  const passIcon = document.getElementById("pass-icon");
-
+  const passwordInput = document.getElementById("password") as HTMLInputElement;
+  const passIcon = document.getElementById("pass-icon") as HTMLImageElement;
   if (passwordInput && passIcon) {
     if (a) {
       passwordInput.type = "password";
