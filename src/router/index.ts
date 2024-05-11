@@ -14,8 +14,26 @@ import ProfileView from '@/views/ProfileView.vue'
 import TablesView from '@/views/TablesView.vue'
 import AlertsView from '@/views/UiElements/AlertsView.vue'
 import ButtonsView from '@/views/UiElements/ButtonsView.vue'
+import Login from '@/views/Pages/Login.vue'
+import Company from '@/views/Pages/Company.vue'
 
 const routes = [
+  {
+    path: '/login',
+    name: 'Login Page',
+    component: Login,
+    meta: {
+      title: 'Login'
+    }
+  },
+  {
+    path: '/company',
+    name: 'Company',
+    component: Company,
+    meta: {
+      title: 'Company Page'
+    }
+  },
   {
     path: '/',
     name: 'eCommerce',
@@ -34,12 +52,20 @@ const routes = [
   },
   {
     path: '/calendar',
-    name: 'calendar',
-    component: CalendarView,
+    // name: 'eCommerce',
+    component: Company,
     meta: {
-      title: 'Calendar'
+      title: 'Company Select'
     }
   },
+  // {
+  //   path: '/calendar',
+  //   name: 'calendar',
+  //   component: CalendarView,
+  //   meta: {
+  //     title: 'Calendar'
+  //   }
+  // },
   {
     path: '/profile',
     name: 'profile',
@@ -72,14 +98,7 @@ const routes = [
       title: 'Tables'
     }
   },
-  {
-    path: '/pages/settings',
-    name: 'settings',
-    component: SettingsView,
-    meta: {
-      title: 'Settings'
-    }
-  },
+ 
   {
     path: '/charts/basic-chart',
     name: 'basicChart',
