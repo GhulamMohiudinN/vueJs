@@ -25,7 +25,7 @@ function pass() {
   <div
     class="bg-[url('@/assets/vueJs/Background.png')] bg-cover h-screen bg-no-repeat text-white"
   >
-    <div class="w-fit mx-auto pt-46">
+    <div class="w-fit mx-auto pt-35">
       <img class="w-70 sm:w-90" src="@/assets/vueJs/Logo.png" alt="" />
     </div>
     <div
