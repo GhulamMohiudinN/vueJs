@@ -12,7 +12,8 @@ import ProfileView from '@/views/ProfileView.vue'
 import TablesView from '@/views/TablesView.vue'
 import AlertsView from '@/views/UiElements/AlertsView.vue'
 import ButtonsView from '@/views/UiElements/ButtonsView.vue'
-import Checkout from '@/views/Checkoutpage/CheckoutView.vue'
+import CheckoutView from '@/views/CheckoutPage/CheckoutView.vue'
+
 
 const routes = [
   // {
@@ -26,7 +27,7 @@ const routes = [
   {
     path: '/checkout',
     name: 'checkout',
-    component: Checkout,
+    component: CheckoutView,
     meta: {
       title: 'eCommerce Dashboard'
     }
