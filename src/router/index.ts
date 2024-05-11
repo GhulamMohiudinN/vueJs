@@ -24,7 +24,7 @@ const routes = [
   //   }
   // },
   {
-    path: '/',
+    path: '/checkout',
     name: 'checkout',
     component: Checkout,
     meta: {

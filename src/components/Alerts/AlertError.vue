@@ -6,8 +6,8 @@
       class="mr-5 flex h-9 w-full max-w-[36px] items-center justify-center rounded-lg bg-[#F87171]"
     >
       <svg
-        width="13"
-        height="13"
+        width="14"
+        height="14"
         viewBox="0 0 13 13"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
