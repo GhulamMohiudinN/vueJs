@@ -25,7 +25,7 @@ const routes = [
     }
   },
   {
-    path: '/company',
+    path: '/',
     name: 'eCommerce',
     component: Company,
     meta: {
@@ -73,7 +73,7 @@ const routes = [
     }
   },
   {
-    path: '/',
+    path: '/login',
     name: 'settings',
     component: Login,
     meta: {
