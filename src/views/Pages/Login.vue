@@ -2,14 +2,13 @@
 import Show from "@/assets/vueJs/view.png";
 import Hide from "@/assets/vueJs/hide.png";
 
-let a: boolean = false; // Explicitly declare the type of 'a'
+let a: boolean = false;
 
 function pass() {
   const passwordInput = document.getElementById("password");
   const passIcon = document.getElementById("pass-icon");
 
   if (passwordInput && passIcon) {
-    // Check if the elements exist
     if (a) {
       passwordInput.type = "password";
       passIcon.src = Hide;
