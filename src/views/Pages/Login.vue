@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import Show from "@/assets/vueJs/view.png";
 import Hide from "@/assets/vueJs/hide.png";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const redirectToCompany = () => {
+  router.push({ name: "company" }); // Update with the name of your dashboard route
+};
 
 let a: boolean = false;
 
@@ -58,11 +65,12 @@ function pass() {
         </div>
       </div>
       <div class="w-fit mx-auto sm:mb-[-20px] mb-[-9%]">
-        <button
+        <router-link
+          to="/company"
           class="text-[#b3b8c4] font-extralight bg-[#525659] py-2 px-3 sm:px-6 rounded-full text-2xl"
         >
           lniciar sesion
-        </button>
+        </router-link>
       </div>
     </div>
   </div>

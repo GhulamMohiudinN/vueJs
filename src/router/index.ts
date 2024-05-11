@@ -17,6 +17,22 @@ import Company from '@/views/Pages/Company.vue'
 
 const routes = [
   {
+    path: '/login',
+    name: 'Login Page',
+    component: Login,
+    meta: {
+      title: 'Login'
+    }
+  },
+  {
+    path: '/company',
+    name: 'Company',
+    component: Company,
+    meta: {
+      title: 'Company Page'
+    }
+  },
+  {
     path: '/',
     name: 'eCommerce',
     component: ECommerceView,
@@ -72,14 +88,7 @@ const routes = [
       title: 'Tables'
     }
   },
-  {
-    path: '/pages/settings',
-    name: 'settings',
-    component: Login,
-    meta: {
-      title: 'Settings'
-    }
-  },
+ 
   {
     path: '/charts/basic-chart',
     name: 'basicChart',
