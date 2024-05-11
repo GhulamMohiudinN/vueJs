@@ -12,14 +12,24 @@ import ProfileView from '@/views/ProfileView.vue'
 import TablesView from '@/views/TablesView.vue'
 import AlertsView from '@/views/UiElements/AlertsView.vue'
 import ButtonsView from '@/views/UiElements/ButtonsView.vue'
+import Login from '@/views/Pages/Login.vue'
+import Company from '@/views/Pages/Company.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/dashbaord',
     name: 'eCommerce',
     component: ECommerceView,
     meta: {
       title: 'eCommerce Dashboard'
+    }
+  },
+  {
+    path: '/company',
+    name: 'eCommerce',
+    component: Company,
+    meta: {
+      title: 'Company Select'
     }
   },
   {
@@ -63,9 +73,9 @@ const routes = [
     }
   },
   {
-    path: '/pages/settings',
+    path: '/',
     name: 'settings',
-    component: SettingsView,
+    component: Login,
     meta: {
       title: 'Settings'
     }
