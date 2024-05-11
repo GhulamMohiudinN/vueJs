@@ -2,16 +2,23 @@
 import Show from "@/assets/vueJs/view.png";
 import Hide from "@/assets/vueJs/hide.png";
 
-var a;
+let a: boolean = false; // Explicitly declare the type of 'a'
+
 function pass() {
-  if (a == 1) {
-    document.getElementById("password").type = "password";
-    document.getElementById("pass-icon").src = Hide;
-    a = 0;
-  } else {
-    document.getElementById("password").type = "text";
-    document.getElementById("pass-icon").src = Show;
-    a = 1;
+  const passwordInput = document.getElementById("password");
+  const passIcon = document.getElementById("pass-icon");
+
+  if (passwordInput && passIcon) {
+    // Check if the elements exist
+    if (a) {
+      passwordInput.type = "password";
+      passIcon.src = Hide;
+      a = false;
+    } else {
+      passwordInput.type = "text";
+      passIcon.src = Show;
+      a = true;
+    }
   }
 }
 </script>
