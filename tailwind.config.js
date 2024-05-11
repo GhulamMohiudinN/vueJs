@@ -16,6 +16,12 @@ export default {
     },
     extend: {
       colors: {
+        // Define your custom dark mode colors
+        darkBg: '#1a202c',
+        darkText: '#cbd5e0',
+
+
+
         current: 'currentColor',
         transparent: 'transparent',
         white: '#FFFFFF',
@@ -307,6 +313,13 @@ export default {
         'spin-3': 'spin 3s linear infinite'
       }
     }
+  },
+  /////////////////////////////////
+  variants: {
+    extend: {
+      backgroundColor: ['dark'],
+      textColor: ['dark'],
+    },
   },
   plugins: []
 }

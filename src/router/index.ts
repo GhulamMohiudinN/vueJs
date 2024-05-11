@@ -5,6 +5,8 @@ import SignupView from '@/views/Authentication/SignupView.vue'
 import CalendarView from '@/views/CalendarView.vue'
 import BasicChartView from '@/views/Charts/BasicChartView.vue'
 import ECommerceView from '@/views/Dashboard/ECommerceView.vue'
+import PointOfSale from '@/views/PointOfSale/PointOfSale.vue'
+// import ZeeshanView from '@/views/Zeeshan/ZeeshanView.vue'
 import FormElementsView from '@/views/Forms/FormElementsView.vue'
 import FormLayoutView from '@/views/Forms/FormLayoutView.vue'
 import SettingsView from '@/views/Pages/SettingsView.vue'
@@ -20,6 +22,14 @@ const routes = [
     component: ECommerceView,
     meta: {
       title: 'eCommerce Dashboard'
+    }
+  },
+  {
+    path: '/pos',
+    name: 'point of sale',
+    component:PointOfSale,
+    meta: {
+      title: 'pos'
     }
   },
   {
