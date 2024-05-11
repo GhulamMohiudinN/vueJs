@@ -16,12 +16,14 @@ export default {
     },
     extend: {
       colors: {
+        darkRed: 'red',
+
+
+
+
         // Define your custom dark mode colors
         darkBg: '#1a202c',
         darkText: '#cbd5e0',
-
-
-
         current: 'currentColor',
         transparent: 'transparent',
         white: '#FFFFFF',

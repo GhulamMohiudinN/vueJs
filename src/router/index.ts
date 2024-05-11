@@ -19,7 +19,7 @@ import Company from '@/views/Pages/Company.vue'
 
 const routes = [
   {
-    path: '/login',
+    path: '/',
     name: 'Login Page',
     component: Login,
     meta: {
@@ -35,7 +35,7 @@ const routes = [
     }
   },
   {
-    path: '/',
+    path: '/olddashboard',
     name: 'eCommerce',
     component: ECommerceView,
     meta: {
