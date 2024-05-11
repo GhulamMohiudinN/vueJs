@@ -12,12 +12,21 @@ import ProfileView from '@/views/ProfileView.vue'
 import TablesView from '@/views/TablesView.vue'
 import AlertsView from '@/views/UiElements/AlertsView.vue'
 import ButtonsView from '@/views/UiElements/ButtonsView.vue'
+import Checkout from '@/views/Checkoutpage/CheckoutView.vue'
 
 const routes = [
+  // {
+  //   path: '/',
+  //   name: 'eCommerce',
+  //   component: ECommerceView,
+  //   meta: {
+  //     title: 'eCommerce Dashboard'
+  //   }
+  // },
   {
     path: '/',
-    name: 'eCommerce',
-    component: ECommerceView,
+    name: 'checkout',
+    component: Checkout,
     meta: {
       title: 'eCommerce Dashboard'
     }
