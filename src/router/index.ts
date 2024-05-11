@@ -17,7 +17,7 @@ import Company from '@/views/Pages/Company.vue'
 
 const routes = [
   {
-    path: '/dashbaord',
+    path: '/',
     name: 'eCommerce',
     component: ECommerceView,
     meta: {
@@ -25,21 +25,21 @@ const routes = [
     }
   },
   {
-    path: '/',
-    name: 'eCommerce',
+    path: '/calendar',
+    // name: 'eCommerce',
     component: Company,
     meta: {
       title: 'Company Select'
     }
   },
-  {
-    path: '/calendar',
-    name: 'calendar',
-    component: CalendarView,
-    meta: {
-      title: 'Calendar'
-    }
-  },
+  // {
+  //   path: '/calendar',
+  //   name: 'calendar',
+  //   component: CalendarView,
+  //   meta: {
+  //     title: 'Calendar'
+  //   }
+  // },
   {
     path: '/profile',
     name: 'profile',
@@ -73,7 +73,7 @@ const routes = [
     }
   },
   {
-    path: '/login',
+    path: '/pages/settings',
     name: 'settings',
     component: Login,
     meta: {
