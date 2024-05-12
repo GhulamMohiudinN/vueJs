@@ -19,6 +19,15 @@ export default {
         darkGrey: "#525659",
         textGrey: "#62666F",
         lightGrey: "#aaaeb6",
+        extraGrey: "#363b3d",
+        extradarkGrey: "#252626",
+
+        // Define your custom dark mode colors
+        darkBg: "#1a202c",
+        darkText: "#cbd5e0",
+        darkGrey: "#525659",
+        textGrey: "#62666F",
+        lightGrey: "#aaaeb6",
         extradarkGrey: "#252626",
 
         current: "currentColor",
