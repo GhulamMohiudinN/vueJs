@@ -16,14 +16,14 @@ import CheckoutView from '@/views/CheckoutPage/CheckoutView.vue'
 
 
 const routes = [
-  // {
-  //   path: '/',
-  //   name: 'eCommerce',
-  //   component: ECommerceView,
-  //   meta: {
-  //     title: 'eCommerce Dashboard'
-  //   }
-  // },
+  {
+    path: '/',
+    name: 'eCommerce',
+    component: ECommerceView,
+    meta: {
+      title: 'eCommerce Dashboard'
+    }
+  },
   {
     path: '/checkout',
     name: 'checkout',

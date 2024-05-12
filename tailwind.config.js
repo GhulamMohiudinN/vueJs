@@ -16,7 +16,11 @@ export default {
     },
     extend: {
       colors: {
-        darkRed: 'red',
+        darkGrey: "#525659",
+        textGrey: "#62666F",
+        lightGrey: "#aaaeb6",
+        extraGrey: "#363b3d",
+        extradarkGrey:"#252626",
 
 
 

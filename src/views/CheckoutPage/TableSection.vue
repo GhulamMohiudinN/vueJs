@@ -1,20 +1,23 @@
 <script setup lang="ts">
 </script>
 <template>
-    <div class=" my-6 mx-8 py-2 px-3 rounded-xl bg-white shadow-4 h-80">
+    <div class=" my-6 mx-8 py-2 px-3 rounded-xl bg-white dark:bg-extraGrey shadow-4 h-80 ">
         <div class="flex  justify-between ">
-            <p class="font-extrabold text-2xl">Detalle de Venta</p>
+            <p class="font-extrabold text-2xl dark:text-white">Detalle de Venta</p>
             <div class="flex items-center">
                 <div class="">
                     <img class="" src="@/assets/images/Asset7.png" alt="icon">
                  </div>
-            <input class="border-b border-[#505050] bg-transparent outline-none text-black-2 text-[14px] "
+            <input class="mx-3 border-b-2  border-[#b8b4b4] bg-transparent outline-none text-black-2 dark:text-white text-[14px] "
           type="text"  id="text" placeholder="" />
+          <div class="text-black dark:text-white bg-[#E6E6E7] dark:bg-textGrey rounded-xl w-6 text-center text-xl">
+            +
+          </div>
             </div>
         </div>
-<div class="overflow-x-auto relative  ">
-    <table class="w-100 text-sm text-left rtl:text-right text-black-2 ">
-        <thead class="text-xs text-black-2 uppercase ">
+<div class="overflow-x-auto relative overflow-y-auto w-auto ">
+    <table class=" text-sm text-left rtl:text-right text-black-2 dark:text-white ">
+        <thead class="text-xs  uppercase ">
             <tr  class="text-center ">
                 <th scope="cols" colspan="5" class="  py-3">
                     Product name
@@ -43,7 +46,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="bg-white border-b-2 border-[#7d8298] text-xs ">
+            <tr class=" border-t-2 border-[#72747e] text-xs ">
                 <td scope="row" colspan="5"   class=" pr-5 py-4 font-medium whitespace-nowrap ">
                     Apple MacBook Pro 17 
                 </td>
@@ -75,7 +78,7 @@
                 </td>
                 
             </tr>
-            <tr class="bg-white border-b-2 border-[#7d8298] text-xs ">
+            <tr class=" border-t-2 border-[#72747e] text-xs ">
                 <td scope="row" colspan="5"   class=" pr-5 py-4 font-medium whitespace-nowrap ">
                     Apple MacBook Pro 17 
                 </td>
@@ -107,7 +110,7 @@
                 </td>
                 
             </tr>
-            <tr class="bg-white border-b-2 border-[#7d8298] text-xs ">
+            <tr class=" border-t-2 border-[#72747e] text-xs ">
                 <td scope="row" colspan="5"   class=" pr-5 py-4 font-medium whitespace-nowrap ">
                     Apple MacBook Pro 17 
                 </td>
@@ -141,6 +144,5 @@
         </tbody>
     </table>
 </div>
-
     </div>
 </template>
