@@ -18,7 +18,7 @@ onClickOutside(target, () => {
       @click.prevent="dropdownOpen = !dropdownOpen"
     >
       <span class="-mt-4 rounded-full">
-        <img src="@/assets/vueJs/user.png" alt="User" />
+        <img src="@/assets/vueJs/user.png" alt="profile" />
       </span>
 
       <span class="hidden text-right lg:block">
