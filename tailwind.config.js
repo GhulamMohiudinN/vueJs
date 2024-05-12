@@ -19,6 +19,7 @@ export default {
         darkGrey: "#525659",
         textGrey: "#62666F",
         lightGrey: "#aaaeb6",
+        extradarkGrey: "#252626",
 
         current: "currentColor",
         transparent: "transparent",
