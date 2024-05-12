@@ -3,12 +3,14 @@
     <Heading />
     <Card :dataItems="items" />
   </div>
+  <Model/>
 </template>
 
 <script setup lang="ts">
 import Heading from '@/views/PointOfSale/Heading.vue';
-// Import Card if needed
  import Card from '@/views/PointOfSale/Card.vue';
+ import Model from '@/views/PointOfSale/Model.vue';
+
 
 const items = [
   { id: 1, name: 'Web Store', data: 'Nambre encargado', number: '00-0000-0000', email: 'webstore@alrid.com' },
