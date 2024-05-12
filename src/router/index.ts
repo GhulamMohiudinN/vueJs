@@ -5,8 +5,6 @@ import SignupView from '@/views/Authentication/SignupView.vue'
 import CalendarView from '@/views/CalendarView.vue'
 import BasicChartView from '@/views/Charts/BasicChartView.vue'
 import ECommerceView from '@/views/Dashboard/ECommerceView.vue'
-import PointOfSale from '@/views/PointOfSale/PointOfSale.vue'
-// import ZeeshanView from '@/views/Zeeshan/ZeeshanView.vue'
 import FormElementsView from '@/views/Forms/FormElementsView.vue'
 import FormLayoutView from '@/views/Forms/FormLayoutView.vue'
 import SettingsView from '@/views/Pages/SettingsView.vue'
@@ -14,28 +12,14 @@ import ProfileView from '@/views/ProfileView.vue'
 import TablesView from '@/views/TablesView.vue'
 import AlertsView from '@/views/UiElements/AlertsView.vue'
 import ButtonsView from '@/views/UiElements/ButtonsView.vue'
+import CheckoutView from '@/views/CheckoutPage/CheckoutView.vue'
 import Login from '@/views/Pages/Login.vue'
 import Company from '@/views/Pages/Company.vue'
+
 
 const routes = [
   {
     path: '/',
-    name: 'Login Page',
-    component: Login,
-    meta: {
-      title: 'Login'
-    }
-  },
-  {
-    path: '/company',
-    name: 'Company',
-    component: Company,
-    meta: {
-      title: 'Company Page'
-    }
-  },
-  {
-    path: '/olddashboard',
     name: 'eCommerce',
     component: ECommerceView,
     meta: {
@@ -43,29 +27,37 @@ const routes = [
     }
   },
   {
-    path: '/pos',
-    name: 'point of sale',
-    component:PointOfSale,
+    path: '/login',
+    name: 'login',
+    component: Login,
     meta: {
-      title: 'pos'
+      title: 'Login page'
+    }
+  },
+  {
+    path: '/company',
+    name: 'company',
+    component: Company,
+    meta: {
+      title: 'company page'
+    }
+  },
+  {
+    path: '/checkout',
+    name: 'checkout',
+    component: CheckoutView,
+    meta: {
+      title: 'eCommerce Dashboard'
     }
   },
   {
     path: '/calendar',
-    // name: 'eCommerce',
-    component: Company,
+    name: 'calendar',
+    component: CalendarView,
     meta: {
-      title: 'Company Select'
+      title: 'Calendar'
     }
   },
-  // {
-  //   path: '/calendar',
-  //   name: 'calendar',
-  //   component: CalendarView,
-  //   meta: {
-  //     title: 'Calendar'
-  //   }
-  // },
   {
     path: '/profile',
     name: 'profile',
@@ -98,7 +90,14 @@ const routes = [
       title: 'Tables'
     }
   },
- 
+  {
+    path: '/pages/settings',
+    name: 'settings',
+    component: SettingsView,
+    meta: {
+      title: 'Settings'
+    }
+  },
   {
     path: '/charts/basic-chart',
     name: 'basicChart',
