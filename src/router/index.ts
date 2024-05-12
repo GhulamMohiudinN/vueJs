@@ -13,6 +13,8 @@ import TablesView from '@/views/TablesView.vue'
 import AlertsView from '@/views/UiElements/AlertsView.vue'
 import ButtonsView from '@/views/UiElements/ButtonsView.vue'
 import CheckoutView from '@/views/CheckoutPage/CheckoutView.vue'
+import Login from '@/views/Pages/Login.vue'
+import Company from '@/views/Pages/Company.vue'
 
 
 const routes = [
@@ -22,6 +24,22 @@ const routes = [
     component: ECommerceView,
     meta: {
       title: 'eCommerce Dashboard'
+    }
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login,
+    meta: {
+      title: 'Login page'
+    }
+  },
+  {
+    path: '/company',
+    name: 'company',
+    component: Company,
+    meta: {
+      title: 'company page'
     }
   },
   {
