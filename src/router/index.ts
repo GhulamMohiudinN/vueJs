@@ -13,6 +13,7 @@ import TablesView from '@/views/TablesView.vue'
 import AlertsView from '@/views/UiElements/AlertsView.vue'
 import ButtonsView from '@/views/UiElements/ButtonsView.vue'
 import CheckoutView from '@/views/CheckoutPage/CheckoutView.vue'
+import Sidebar from '@/views/Sidebar/Sidebar.vue'
 
 
 const routes = [
@@ -22,6 +23,14 @@ const routes = [
     component: ECommerceView,
     meta: {
       title: 'eCommerce Dashboard'
+    }
+  },
+  {
+    path: '/sidebar',
+    name: 'Sidebar',
+    component: Sidebar,
+    meta: {
+      title: 'Sidebar Dashboard'
     }
   },
   {
